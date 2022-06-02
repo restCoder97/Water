@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// add all CSS here!
+
+main{
+  font-family: 'Inter', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.titleHead{
+  font-family: 'Inter', sans-serif;
+  font-weight: Bold;
+  font-size: 28px;
+  color: white;
+  background: rgb(66,145,152);
+  margin-top: 0px;
+  padding:40px;
+  padding-left: 130px; 
+}
+
+.topContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 50px;
+}
+
+.wordContent{
+  display: flex;
+  flex-direction: column;
+  width: 62.3%;
+}
+
+.imgContent{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  width: 32%;
+  margin-top: 20px;
+}
+
+#text1{
+  margin-bottom: 7px;
+}
+
+#text2{
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.img{
+  margin-bottom: 10px;
+}
+
+.seeButton{
+  border-radius: 8px;
+  width: 155px;
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgb(66,145,152);
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  margin-top: 15px;
+}
+
+.bottomContent{
+  display: flex;
+  /*visibility: hidden;*/
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 70px;
+}
+
+#hidden{
+  visibility: hidden;
+}
+
+#show{
+  visibility: visible;
+}
+
+.table{
+  width:45%;
+}
+
+.bottomLeft{
+    width:46%;
+}
+
+.wordBottom{
+  margin-bottom: 40px;
+}
+
+.month{
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  align-items: flex-start;
+}
+
+
+.monthContent{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(66, 145, 152);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#pickerid{
+  height: 40px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width:480px) and (max-width:900px) {
+  .titleHead{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .topContent{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 90px;
+  }
+  
+  .wordContent{
+    width: 89%;
+    margin: 0px;
+  }
+  
+  .imgContent{
+    width: 89%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  
+  .bottomContent{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .table{
+    width:89%;
+    margin-top: 70px;
+  /*height: 500px;*/
+  }
+  
+  .bottomLeft{
+    width:75%;
+    padding-left: 90px;
+  }
+
+  .month{
+    display: flex;
+    height: 210px;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width:480px){
+  .titleHead{
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    }
+  
+  .topContent{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 65px;
+    margin-left: 65px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+    
+  .wordContent{
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .imgContent{
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .bottomContent{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 75%;
+    margin-left: 20px;
+    margin-top: 35px;
+  }
+    
+  .bottomLeft{
+    width:100%;
+  }
+  
+  .table{
+    width:100%;
+    margin-top: 90px;
+  /*height: 300px;*/
+  }
+}

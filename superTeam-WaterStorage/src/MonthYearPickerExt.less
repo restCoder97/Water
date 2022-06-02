@@ -1,0 +1,100 @@
+// Source: https://github.com/nclong87/react-month-year-picker/blob/master/src/monthYearPicker.less
+// copied here with edit for flexible style
+
+.month-year-picker {
+  margin: auto;
+  width: 200px;
+  border-style: groove;
+
+  .caption {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .year-picker {
+    position: relative;
+    margin-bottom: 20px;
+
+    span {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 300;
+      color: black;
+      text-align: center;
+      display: block;
+    }
+
+    .controlsLeft {
+      position: absolute;
+      left: 0;
+      width: 80px;
+      top: 0;
+      height: 100%;
+      display: flex;
+
+      .fa {
+        margin: auto;
+        cursor: pointer;
+
+        &.disabled {
+          cursor: default;
+          opacity: 0.3;
+        }
+      }
+    }
+    
+    .controlsRight {
+      position: absolute;
+      right: 0;
+      width: 80px;
+      top: 0;
+      height: 100%;
+      display: flex;
+
+      .fa {
+        margin: auto;
+        cursor: pointer;
+
+        &.disabled {
+          cursor: default;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+
+  .month-picker {
+    position: relative;
+    width: 100%;
+
+    > div {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      display: block;
+
+      > div {
+        color: #0f0f0f;
+        font-family: 'Inter', sans-serif;
+        height: 20%;
+        margin: 10px;
+        width: 20%;
+        display: inline-flex;
+        cursor: pointer;
+
+        &.selected {
+          background-color: #0F0F0F;
+          color: #FFFFFF;
+        }
+
+        span {
+          font-weight: 300;
+          margin: auto;
+          font-size: 12px;
+        }
+      }
+
+    }
+  }
+}
